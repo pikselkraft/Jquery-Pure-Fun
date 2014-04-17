@@ -18,7 +18,7 @@ $(document).ready(function() {
     /**
      * Animationd des titres et remplacement du texte html
      */
-    $(".header h1").text("Titre jQuery");
+    $(".header h1").text("Guide de la librairie Jquery");
     $(".header h1").css({opacity: 0});
     $(".header h1").animate({opacity: 1}, 2000);
 
@@ -26,6 +26,12 @@ $(document).ready(function() {
     soustitre.text("Sous titre jQuery");
     soustitre.css({opacity: 0});
     soustitre.animate({opacity: 1}, 2000);
+
+    $(".afficheCode").hide();
+    $("#afficheCode").on("click", function(e) {
+        $(this).hide();
+        $(".afficheCode").show();
+    });
 
     
      /**
@@ -55,9 +61,9 @@ $(document).ready(function() {
      * affichage d'une liste en json
      */
     var listeContact = {
-        "Léna"  : "0623996633",
-        "Maxim" : "0623472872",
-        "Derek" : "0655222872"
+        "Json"  : "0623996633",
+        "Json1" : "0623472872",
+        "Json2" : "0655222872"
     }
     var i = 0;
 
